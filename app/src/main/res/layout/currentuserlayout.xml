@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/userprofile"
+    android:paddingTop="20dp"
+    android:paddingEnd="20dp"
+    android:background="@color/screentheme"
+    android:theme="@style/Theme.Intern.AppBarOverlay"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aravind A"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abhi.aripaka2002@gmail.com"
+        android:textColor="@color/darkwhite"
+        android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileimage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FF000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user2"
+        android:layout_marginLeft="10dp"
+
+
+        />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

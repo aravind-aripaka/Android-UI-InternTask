@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="0dp"
+    android:layout_weight="0.8"
+    android:paddingTop="50dp"
+    android:background="@color/screentheme"
+    android:id="@+id/recentslayout"
+    >
+
+    <LinearLayout
+        android:id="@+id/btnrecentslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recents"
+            android:textSize="18dp"
+            android:textColor="@color/darkwhite" />
+        <TextView
+            android:id="@+id/recentbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="^"
+            android:paddingTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/recentcontactslayout"/>
+    </ScrollView>
+
+</LinearLayout>
